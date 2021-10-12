@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Popee\\Desktop\\Мои домашние проекты)\\Teaching\\Teaching.csproj": {}
+    "C:\\Users\\Popee\\Desktop\\Мои домашние проекты)\\UoW\\Teaching.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Popee\\Desktop\\Мои домашние проекты)\\Teaching\\Teaching.csproj": {
+    "C:\\Users\\Popee\\Desktop\\Мои домашние проекты)\\UoW\\Teaching.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Popee\\Desktop\\Мои домашние проекты)\\Teaching\\Teaching.csproj",
+        "projectUniqueName": "C:\\Users\\Popee\\Desktop\\Мои домашние проекты)\\UoW\\Teaching.csproj",
         "projectName": "Teaching",
-        "projectPath": "C:\\Users\\Popee\\Desktop\\Мои домашние проекты)\\Teaching\\Teaching.csproj",
+        "projectPath": "C:\\Users\\Popee\\Desktop\\Мои домашние проекты)\\UoW\\Teaching.csproj",
         "packagesPath": "C:\\Users\\Popee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Popee\\Desktop\\Мои домашние проекты)\\Teaching\\obj\\",
+        "outputPath": "C:\\Users\\Popee\\Desktop\\Мои домашние проекты)\\UoW\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Popee\\AppData\\Roaming\\NuGet\\NuGet.Config",

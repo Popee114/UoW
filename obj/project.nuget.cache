@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D+83ed+AvfPgqWOybRdzCTCtGiBaXFgh4fIRZI2v3NfTbiOJ++iZxFUDLptBQRhdokNqJSJkH7bnxIBmyUzi2g==",
+  "dgSpecHash": "5Ocw3OaoMVUfzbJZHidFIqPdrhygi/Up+IJl4fCF/rru1miRxfIc0KMtb0N10h7Gx/qc3FUnxGoyRqvRrldULw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Popee\\Desktop\\Мои домашние проекты)\\Teaching\\Teaching.csproj",
+  "projectFilePath": "C:\\Users\\Popee\\Desktop\\Мои домашние проекты)\\UoW\\Teaching.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Popee\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Popee\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

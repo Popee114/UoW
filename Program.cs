@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Teaching.DbContexts;
 
 namespace Teaching
 {
@@ -13,7 +16,9 @@ namespace Teaching
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            var host = CreateHostBuilder(args).Build();
+            MigrateDatabase(host.Services);
+            host.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -22,5 +27,22 @@ namespace Teaching
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+        private static void MigrateDatabase(IServiceProvider serviceProvider)
+        {
+            using (var scope = serviceProvider.CreateScope())
+            {
+                var dbContext = scope.ServiceProvider.GetService<AccountContext>();
+
+                var migrations = dbContext.Database.GetPendingMigrations();
+
+                foreach (var migration in migrations)
+                {
+                    Console.WriteLine($"[x] pending migration {migration}");
+                }
+
+                dbContext.Database.Migrate();
+            }
+        }
     }
 }
